@@ -1,3 +1,3 @@
-## <small>4.4.1 (2026-07-15)</small>
+## <small>4.4.3 (2026-07-30)</small>
 
-* fix: restore MsgKey._serialized on keys created before injection (#3488) ([a0abd24b69b29bb93d6ba49c8a3422dac057a9b7](https://github.com/wppconnect-team/wa-js/commit/a0abd24b69b29bb93d6ba49c8a3422dac057a9b7)), closes [#3488](https://github.com/wppconnect-team/wa-js/issues/3488) [#3484](https://github.com/wppconnect-team/wa-js/issues/3484)
+* fix: support new label deletion signature (#3494) ([31512a90f4025234d439477f2879014c3544d5c6](https://github.com/wppconnect-team/wa-js/commit/31512a90f4025234d439477f2879014c3544d5c6)), closes [#3494](https://github.com/wppconnect-team/wa-js/issues/3494)
