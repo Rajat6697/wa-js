@@ -1,5 +1,5 @@
 /*!
- * Copyright 2021 WPPConnect Team
+ * Copyright 2026 WPPConnect Team
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,17 +14,18 @@
  * limitations under the License.
  */
 
-export * from './ACK';
-export * from './CALL_STATES';
-export * from './CHANNEL_EVENT_SURFACE';
-export * from './GROUP_SETTING_TYPE';
-export * from './KIC_ENTRY_POINT_TYP';
-export * from './LogoutReason';
-export * from './MSG_TYPE';
-export * from './OUTWARD_TYPES';
-export * from './PIN_STATE';
-export * from './PinExpiryDurationOption';
-export * from './SendMsgResult';
-export * from './StreamInfo';
-export * from './StreamMode';
-export * from './WAWebNonJidMentionType';
+/**
+ * Helpers for testing wa-js by hand from the browser console.
+ *
+ * This module only exists in the development build (`npm run build:dev`):
+ * `src/index.ts` requires it behind `if (__DEV__)`, which webpack folds away in
+ * production, so nothing here ships to users.
+ *
+ * @example
+ * ```javascript
+ * await WPP.dev.sendTests();
+ * ```
+ */
+
+export type { TestCase, TestGroup, TestResult } from './sendTests';
+export { cases, sendTests } from './sendTests';
